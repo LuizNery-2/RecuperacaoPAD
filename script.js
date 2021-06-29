@@ -16,21 +16,21 @@ console.log(`Result is `,result);
 
 //Questão 2
 
+function someFn(A){
+    var valor =  A;
+    return function(Aumento){
+
+      valor += Aumento;
+        return valor;
+
+    }
+}
+
+
 var counter = someFn(1)
  console.log('Fist call', counter(3));
  console.log('Second call',counter(1));
  console.log('Third call',counter(5));
-
-
- function someFn(A){
-      var valor =  A;
-      return function(Aumento){
- 
-        valor += Aumento;
-          return valor;
-
-      }
- }
 
 
  //Questão 3
